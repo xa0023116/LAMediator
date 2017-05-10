@@ -28,7 +28,7 @@
  *  Routes
  *  URL调用方式，适用于远程调用
  *
- *  @param  URLString 字符串格式: 项目名:// 类名 ? 参数1 = value1 & 参数2 = value2  Note: 参数1 为方法名
+ *  @param  URLString 字符串格式: / 类名 ? 参数1 = value1 & 参数2 = value2  Note: 参数1 为方法名
  *
  *  @return 返回方法执行结果 任意对象 无返回值返回nil
  */
@@ -38,12 +38,14 @@
  *  Routes
  *  URL调用方式，适用于远程调用
  *
- *  @param  URLString 字符串格式: 项目名:// 类名 ? 参数1 = value1 & 参数2 = value2  Note: 参数1 为方法名
+ *  @param  URLString 字符串格式: / 类名 ? 参数1 = value1 & 参数2 = value2  Note: 参数1 为方法名
+ *  @param  isStatic  是否是静态方法 ，默认实例方法
  *  @param  object    返回反射的对象
  *
  *  @return 返回方法执行结果 任意对象 无返回值返回nil
  */
 - (nullable id) routeURL: (nonnull NSString *) URLString
+                isStatic: (BOOL) isStatic
                   object: (_Nullable id __strong * _Nullable) object;
 
 #pragma mark -

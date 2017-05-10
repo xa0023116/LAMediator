@@ -94,15 +94,7 @@ static inline id returnValue(NSInvocation * invocation) {
 #pragma mark -
 #pragma mark Routes NSString  分类
 
-static BOOL shouldDecodePlusSymbols = YES;
-
 @interface NSString(LARoutes)
-
-/**
- *  解码字符
- *
- */
-- (NSString *) laRoutes_URLDecodedString;
 
 /**
  *  参数解析
@@ -116,15 +108,9 @@ static BOOL shouldDecodePlusSymbols = YES;
 
 @implementation NSString(LARoutes)
 
-/// 解码字符
-- (NSString *) laRoutes_URLDecodedString {
-    NSString *input = shouldDecodePlusSymbols ? [self stringByReplacingOccurrencesOfString:@"+" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, self.length)] : self;
-    return [input stringByRemovingPercentEncoding];
-}
-
 /// 参数解析  debug=true&foo=bar
 - (NSDictionary *) laRoutes_URLParameterDictionary {
-    NSDictionary *parameters = [NSDictionary dictionary];
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
     
     if (self.length
         && [self rangeOfString:@"="].location != NSNotFound) {
@@ -132,9 +118,19 @@ static BOOL shouldDecodePlusSymbols = YES;
         
         for (NSString * keyValuePair in keyValuePairsArray) {
             NSArray *pair = [keyValuePair componentsSeparatedByString:@"="];
-            NSString *paramValue = pair.count == 2 ? pair[1] : @"";
+            NSString *paramKey = pair[0];
+            id paramValue;
+            if (pair.count == 2) {
+                paramValue = pair[1];
+            } else if (pair.count > 2) {
+                NSString *tmpParamValue;
+                for (int i = 1; i < pair.count; i ++) {
+                    tmpParamValue = [tmpParamValue stringByAppendingString:pair[i]];
+                }
+                paramValue = tmpParamValue;
+            }
             
-            [parameters setValue:pair[0] forKey:[paramValue laRoutes_URLDecodedString] ?: @""];
+            [parameters setObject:pair[1] forKey:paramKey];
         }
     }
     return parameters;
@@ -206,17 +202,19 @@ static BOOL shouldDecodePlusSymbols = YES;
 
 - (nullable id) routeURL: (nonnull NSString *) URLString {
     id object;
-    return [self routeURL:URLString object:&object];
+    return [self routeURL:URLString isStatic:false object:&object];
 }
 
 - (nullable id) routeURL: (nonnull NSString *) URLString
+                isStatic: (BOOL) isStatic
                   object: (_Nullable id __strong * _Nullable) object {
-    NSURL *URL = [NSURL URLWithString:URLString];
-    // 参数
-    NSDictionary *queryParameters = [URL.query laRoutes_URLParameterDictionary];
-    // 类名
-    if (URL.host.length > 0 && ![URL.host isEqualToString:@"localhost"]) {
-        return [self revClass:URL.host params:queryParameters object:object];
+    
+    NSString *urlParam = [[URLString componentsSeparatedByString:@"/"] lastObject];
+    NSArray *array     = [urlParam componentsSeparatedByString:@"?"];
+    NSString *clazz    = [array firstObject];
+    if (clazz) {
+        NSString *param = [array lastObject];
+        return [self revClass:clazz isStatic:isStatic params:[param laRoutes_URLParameterDictionary] object:object];
     }
     
     return nil;

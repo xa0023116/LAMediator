@@ -27,9 +27,14 @@ pod "JKMediator"
 ```
 
 ```ruby
-## Runtime  支持静态方法和实例方法， 对象，Block参数等，对象持续操作
-    [[LAMediator sharedInstance]revClass:@"JKViewController" isStatic:NO params:@{@"testA":@"1",@"testB":@"2"}]; 
+## Runtime  支持静态方法和实例方法， 对象，Block参数等，对象持续性操作
+    [[LAMediator sharedInstance]revClass:@"JKViewController" isStatic:NO 
+    params:@{@"testA":@"1",@"testB":@"2"}]; 
 ```
+
+##  Test
+
+Test_Mediator
 
 
 ## Author

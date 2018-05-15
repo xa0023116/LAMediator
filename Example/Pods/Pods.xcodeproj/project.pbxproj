@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A5446BFB6FA2A5BEDA5BF09D670A867 /* Pods-JKMediator_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0841F326169956B68FF0B1D64271CE9 /* Pods-JKMediator_Example-dummy.m */; };
+		32546E9F162AF2EAE8FCB2F527A215D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		4E62611874A106384292D2A109F6CDF6 /* LAMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A5CFBC06F294A9DCEAB54D8B5DAD9F6 /* LAMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5530B8F1A2A41F86D39E3BF534ADE0BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A114C75398F11A56004C85C7EC4E801C /* Pods-JKMediator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5C2E9DC09ECE9EF27A6E1AF4F06FFE4 /* Pods-JKMediator_Tests-dummy.m */; };
+		ABBE6EA66607B4AF8DA30F7EFE3936AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		C6208D5D5A04C3F3468D1BFDCFA387CE /* LAMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = CA724DCBD2B9C1D24C6EFAAA4FA6DDC7 /* LAMediator.m */; };
+		CB9B574B62A3FC8F5DE58408BAE72125 /* JKMediator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79C352F85E327E9DF6CC8DE49A0714F0 /* JKMediator-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F839AD8112857DCEC5AEB5122E1DAE9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8FD0B7BE49556805BAD61EEB99E1657;
+			remoteInfo = JKMediator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10D7011F0E156D43056088ABD899B159 /* Pods-JKMediator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKMediator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FA4DCE76596E08AD33B725CF78142E2 /* Pods-JKMediator_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKMediator_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3C01FB395F00D4B07186C1188DEBF5D3 /* libPods-JKMediator_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JKMediator_Example.a"; path = "libPods-JKMediator_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		596D7237E20F324ACA5390D02970527D /* Pods-JKMediator_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKMediator_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5A5CFBC06F294A9DCEAB54D8B5DAD9F6 /* LAMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = LAMediator.h; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73D5F2AF17F8750EBF501675F2BAA0EE /* Pods-JKMediator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKMediator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		79C352F85E327E9DF6CC8DE49A0714F0 /* JKMediator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKMediator-dummy.m"; sourceTree = "<group>"; };
+		7CADD01355F86799C71FE6F0921AD0A0 /* JKMediator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKMediator-prefix.pch"; sourceTree = "<group>"; };
+		837A539D4C363375EA8298B361B3A13B /* Pods-JKMediator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKMediator_Tests-resources.sh"; sourceTree = "<group>"; };
+		8FD8E055941C3DF688E7BF24730A6FA5 /* Pods-JKMediator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKMediator_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5C2E9DC09ECE9EF27A6E1AF4F06FFE4 /* Pods-JKMediator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKMediator_Tests-dummy.m"; sourceTree = "<group>"; };
+		A8D2982B4A67DB02A4F94FBF2A00387C /* Pods-JKMediator_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKMediator_Example-resources.sh"; sourceTree = "<group>"; };
+		B456BDEFAB229C1C383A79AAD17849AD /* Pods-JKMediator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKMediator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BC30C9DF2CC851EF35C18474512B36EC /* Pods-JKMediator_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKMediator_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE0BE2A6470209CF56134F99613EA6F2 /* JKMediator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKMediator.xcconfig; sourceTree = "<group>"; };
+		C4C441C4555C610B5AF9DBAF76547C50 /* libJKMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJKMediator.a; path = libJKMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA724DCBD2B9C1D24C6EFAAA4FA6DDC7 /* LAMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = LAMediator.m; sourceTree = "<group>"; };
+		CB547A7792734221EE974086DD613575 /* Pods-JKMediator_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKMediator_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D0841F326169956B68FF0B1D64271CE9 /* Pods-JKMediator_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKMediator_Example-dummy.m"; sourceTree = "<group>"; };
+		E1C991762202E137E22BD8F91D4DFB71 /* Pods-JKMediator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKMediator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F6D660F56A57CBE86DAE0AD116BB3E63 /* libPods-JKMediator_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JKMediator_Tests.a"; path = "libPods-JKMediator_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAE9C04E6DE8FC1E68DB132AA6E45F7 /* Pods-JKMediator_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKMediator_Example.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25AE74914B58B80F340D5846EB2E0DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5530B8F1A2A41F86D39E3BF534ADE0BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		286A483EAA631E90B45572C4C83CADE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABBE6EA66607B4AF8DA30F7EFE3936AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6142B8096FD1810B35C5FBFE187637D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32546E9F162AF2EAE8FCB2F527A215D5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0292329E5741D5AD518675546243DA01 /* Pods-JKMediator_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				73D5F2AF17F8750EBF501675F2BAA0EE /* Pods-JKMediator_Tests-acknowledgements.markdown */,
+				B456BDEFAB229C1C383A79AAD17849AD /* Pods-JKMediator_Tests-acknowledgements.plist */,
+				A5C2E9DC09ECE9EF27A6E1AF4F06FFE4 /* Pods-JKMediator_Tests-dummy.m */,
+				8FD8E055941C3DF688E7BF24730A6FA5 /* Pods-JKMediator_Tests-frameworks.sh */,
+				837A539D4C363375EA8298B361B3A13B /* Pods-JKMediator_Tests-resources.sh */,
+				10D7011F0E156D43056088ABD899B159 /* Pods-JKMediator_Tests.debug.xcconfig */,
+				E1C991762202E137E22BD8F91D4DFB71 /* Pods-JKMediator_Tests.release.xcconfig */,
+			);
+			name = "Pods-JKMediator_Tests";
+			path = "Target Support Files/Pods-JKMediator_Tests";
+			sourceTree = "<group>";
+		};
+		1A4D3AEC2C0A8770F376CDEE6B062CE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE0BE2A6470209CF56134F99613EA6F2 /* JKMediator.xcconfig */,
+				79C352F85E327E9DF6CC8DE49A0714F0 /* JKMediator-dummy.m */,
+				7CADD01355F86799C71FE6F0921AD0A0 /* JKMediator-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JKMediator";
+			sourceTree = "<group>";
+		};
+		633D330104B03FB7669B7D7E1AA1B86D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				903EFD2501D684BAD4D95213EFFC1011 /* Pods-JKMediator_Example */,
+				0292329E5741D5AD518675546243DA01 /* Pods-JKMediator_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F6D5E8A452EF368893CE01A324FA1FFB /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				FFF9C028F85CEE9837E7EC01BB363573 /* Products */,
+				633D330104B03FB7669B7D7E1AA1B86D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		869379A8D14F8C305D17F6E2DF399CEE /* JKMediator */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A5B541346D8EB482CA74CA305BD7F /* JKMediator */,
+				1A4D3AEC2C0A8770F376CDEE6B062CE1 /* Support Files */,
+			);
+			name = JKMediator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		903EFD2501D684BAD4D95213EFFC1011 /* Pods-JKMediator_Example */ = {
+			isa = PBXGroup;
+			children = (
+				596D7237E20F324ACA5390D02970527D /* Pods-JKMediator_Example-acknowledgements.markdown */,
+				BC30C9DF2CC851EF35C18474512B36EC /* Pods-JKMediator_Example-acknowledgements.plist */,
+				D0841F326169956B68FF0B1D64271CE9 /* Pods-JKMediator_Example-dummy.m */,
+				1FA4DCE76596E08AD33B725CF78142E2 /* Pods-JKMediator_Example-frameworks.sh */,
+				A8D2982B4A67DB02A4F94FBF2A00387C /* Pods-JKMediator_Example-resources.sh */,
+				CB547A7792734221EE974086DD613575 /* Pods-JKMediator_Example.debug.xcconfig */,
+				FEAE9C04E6DE8FC1E68DB132AA6E45F7 /* Pods-JKMediator_Example.release.xcconfig */,
+			);
+			name = "Pods-JKMediator_Example";
+			path = "Target Support Files/Pods-JKMediator_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		ED2A5B541346D8EB482CA74CA305BD7F /* JKMediator */ = {
+			isa = PBXGroup;
+			children = (
+				5A5CFBC06F294A9DCEAB54D8B5DAD9F6 /* LAMediator.h */,
+				CA724DCBD2B9C1D24C6EFAAA4FA6DDC7 /* LAMediator.m */,
+			);
+			name = JKMediator;
+			path = JKMediator;
+			sourceTree = "<group>";
+		};
+		F6D5E8A452EF368893CE01A324FA1FFB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				869379A8D14F8C305D17F6E2DF399CEE /* JKMediator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FFF9C028F85CEE9837E7EC01BB363573 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4C441C4555C610B5AF9DBAF76547C50 /* libJKMediator.a */,
+				3C01FB395F00D4B07186C1188DEBF5D3 /* libPods-JKMediator_Example.a */,
+				F6D660F56A57CBE86DAE0AD116BB3E63 /* libPods-JKMediator_Tests.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2FBCC3BFB0588441464593E9DAF51544 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E62611874A106384292D2A109F6CDF6 /* LAMediator.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4618A4D4032DE069C3F3AE2661747CDB /* Pods-JKMediator_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F194842C55AE73BCBB02143A7B532AD /* Build configuration list for PBXNativeTarget "Pods-JKMediator_Tests" */;
+			buildPhases = (
+				CB7C1E27C5619EEB4AEDB9F8A1FA544B /* Sources */,
+				E6142B8096FD1810B35C5FBFE187637D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JKMediator_Tests";
+			productName = "Pods-JKMediator_Tests";
+			productReference = F6D660F56A57CBE86DAE0AD116BB3E63 /* libPods-JKMediator_Tests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C97E258404FE2FB060595986EB46C6F9 /* Pods-JKMediator_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ED4F1252201495E3015AFF5DA99EA23 /* Build configuration list for PBXNativeTarget "Pods-JKMediator_Example" */;
+			buildPhases = (
+				F6FD84CB13B6FF1800F34D5B29012937 /* Sources */,
+				286A483EAA631E90B45572C4C83CADE4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00DBE3DE83BAFE8A072317354BFE25FF /* PBXTargetDependency */,
+			);
+			name = "Pods-JKMediator_Example";
+			productName = "Pods-JKMediator_Example";
+			productReference = 3C01FB395F00D4B07186C1188DEBF5D3 /* libPods-JKMediator_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E8FD0B7BE49556805BAD61EEB99E1657 /* JKMediator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64C7EF03B0F262051A807DBC32B71807 /* Build configuration list for PBXNativeTarget "JKMediator" */;
+			buildPhases = (
+				A64E2F5A986271E6C20C3E57424FFC1E /* Sources */,
+				25AE74914B58B80F340D5846EB2E0DFE /* Frameworks */,
+				2FBCC3BFB0588441464593E9DAF51544 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKMediator;
+			productName = JKMediator;
+			productReference = C4C441C4555C610B5AF9DBAF76547C50 /* libJKMediator.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = FFF9C028F85CEE9837E7EC01BB363573 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8FD0B7BE49556805BAD61EEB99E1657 /* JKMediator */,
+				C97E258404FE2FB060595986EB46C6F9 /* Pods-JKMediator_Example */,
+				4618A4D4032DE069C3F3AE2661747CDB /* Pods-JKMediator_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A64E2F5A986271E6C20C3E57424FFC1E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9B574B62A3FC8F5DE58408BAE72125 /* JKMediator-dummy.m in Sources */,
+				C6208D5D5A04C3F3468D1BFDCFA387CE /* LAMediator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7C1E27C5619EEB4AEDB9F8A1FA544B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A114C75398F11A56004C85C7EC4E801C /* Pods-JKMediator_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6FD84CB13B6FF1800F34D5B29012937 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5446BFB6FA2A5BEDA5BF09D670A867 /* Pods-JKMediator_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00DBE3DE83BAFE8A072317354BFE25FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JKMediator;
+			target = E8FD0B7BE49556805BAD61EEB99E1657 /* JKMediator */;
+			targetProxy = 4F839AD8112857DCEC5AEB5122E1DAE9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F67307B455796B0DCD9277C55FEBE75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C991762202E137E22BD8F91D4DFB71 /* Pods-JKMediator_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1F8CCBA8E8C95B96224FDDB66E19A112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB547A7792734221EE974086DD613575 /* Pods-JKMediator_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2E9A5828FEE0B57C995C2F02EBCB27EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0BE2A6470209CF56134F99613EA6F2 /* JKMediator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JKMediator/JKMediator-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		4A14623FE1F4AB7C8B89B685451071F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE0BE2A6470209CF56134F99613EA6F2 /* JKMediator.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/JKMediator/JKMediator-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		CBE94690AEF39D9D406F5CA6A5C8FB5E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEAE9C04E6DE8FC1E68DB132AA6E45F7 /* Pods-JKMediator_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D29DB7BFE70E0403F8769218A6D5EE5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10D7011F0E156D43056088ABD899B159 /* Pods-JKMediator_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3ED4F1252201495E3015AFF5DA99EA23 /* Build configuration list for PBXNativeTarget "Pods-JKMediator_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F8CCBA8E8C95B96224FDDB66E19A112 /* Debug */,
+				CBE94690AEF39D9D406F5CA6A5C8FB5E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64C7EF03B0F262051A807DBC32B71807 /* Build configuration list for PBXNativeTarget "JKMediator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E9A5828FEE0B57C995C2F02EBCB27EA /* Debug */,
+				4A14623FE1F4AB7C8B89B685451071F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F194842C55AE73BCBB02143A7B532AD /* Build configuration list for PBXNativeTarget "Pods-JKMediator_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D29DB7BFE70E0403F8769218A6D5EE5F /* Debug */,
+				0F67307B455796B0DCD9277C55FEBE75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

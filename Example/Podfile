@@ -1,0 +1,11 @@
+#use_frameworks!
+
+target 'JKMediator_Example' do
+  pod 'JKMediator', :path => '../'
+
+  target 'JKMediator_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

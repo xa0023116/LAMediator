@@ -20,9 +20,21 @@ it, simply add the following line to your Podfile:
 pod "JKMediator"
 ```
 
+## Support
+```ruby
+## URLRoute 
+    [[LAMediator sharedInstance] routeURL:@"JKdoctor/JKViewController?testA=10&testB=20"];
+```
+
+```ruby
+## Runtime  支持静态方法和实例方法， 对象，Block参数等，对象持续操作
+    [[LAMediator sharedInstance]revClass:@"JKViewController" isStatic:NO params:@{@"testA":@"1",@"testB":@"2"}]; 
+```
+
+
 ## Author
 
-liuweiqiang, liuweiqiang@jianke.com
+Qminlov
 
 ## License
 

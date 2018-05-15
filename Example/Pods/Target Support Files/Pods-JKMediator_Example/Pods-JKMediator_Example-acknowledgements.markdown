@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## JKMediator
 
-Copyright (c) 2017 liuweiqiang <liuweiqiang@jianke.com>
+Copyright (c) 2017 Qminlov
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
